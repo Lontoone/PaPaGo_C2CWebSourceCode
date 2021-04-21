@@ -1,0 +1,382 @@
+
+.mainContent{
+    padding-top: 110px;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    
+}
+
+button{ font-family: 'Noto Sans TC', sans-serif;}
+
+.basicWhiteBoard{
+    background-color: white;
+    min-height: 450px;
+    min-width: 1500px;
+    width: 80%;    
+    margin: 10px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 25px;
+}
+.titleInfo{
+    
+    display: grid;
+    grid-template-columns: 550px auto;
+    grid-template-rows: auto 350px;
+}
+
+/*vvvvvvvvv資訊總攬左欄vvvvvvvvvvv*/
+.titleInfo-left img{
+    max-width: 500px;
+    max-height: 350px;
+}
+.block-btn{
+    margin: 15px;
+    height: 50px;
+    width: 170px;
+    outline: none;
+    border: none;
+    font-size: 22pt;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+/*
+#contentSeller-btn{
+    background-color:rgb(226, 109, 109);
+}
+#buy-btn{
+    background-color: #E25A5A;
+}*/
+
+/*^^^^^^^^^^^資訊總攬左欄^^^^^^^^^^*/
+
+/*vvvvvvvvv資訊總攬右欄vvvvvvvvvvv*/
+.titleInfo-right{
+    display: grid;
+    grid-template-rows: 50px 50px 100px auto 70px;
+}
+
+.titleInfo-right *{
+    margin: 5px;
+}
+.middlePart{
+    margin-top:15px ;
+    display: grid;
+    grid-template-columns: 230px 350px auto;
+}
+.amount-container{
+    display: grid;
+    grid-template-columns: 50px 30px 90px 30px 80px;
+    height: 30px;
+    transition: 0.5s;
+}
+
+#amount{
+    border: 2px solid #E2955A;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.middlePart .price{
+    font-size: 50px;
+}
+.describePart{
+    display: grid;
+    grid-template-columns: 250px auto;
+}
+.basicInfo{
+    margin:0 25px;
+    color: rgba(128, 128, 128, 0.712);
+}
+.basicInfo p{
+    margin-top: 15px;
+}
+
+/*^^^^^^^^^^^資訊總攬右欄^^^^^^^^^^*/
+
+.showPictureGrid{
+    grid-column: 1/3;
+    height: 90%;
+    width: 95%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+}
+.showPictureGrid img{
+    max-height: 100%;
+    margin: 0 15px;
+}
+
+
+/*vvvvvvvvvvvvvvvv日歷vvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+
+#dateGrid{
+}
+
+.calendarContainer{
+    display: grid;
+    /*日期(年月)+ 內容 + 上下月的btn*/
+    grid-template-rows: 80px auto 150px;
+    
+}
+.calendarTitle{
+    font-size: 28pt;    
+}
+#calendar-tabel{
+    background-color: rgba(206, 206, 206, 0.13);   
+
+}
+#calendar-tabel th{
+    height: 30px;
+    width: 70px;
+    font-size: 16pt;
+    color: aliceblue;
+    text-align: center;
+    vertical-align: middle;
+    background-color:#FF5E5E;
+}
+#calendar-tabel td{
+    text-align: center;
+    vertical-align: middle;
+    height: 50px;
+    width: 70px;
+    font-size: 16pt;
+    transition: 0.2s;
+    /*border: solid 1px rgba(128, 128, 128, 0.562);*/
+}
+#calendar-tabel td:hover:not(.notClickableDate){
+    background-color:#FFF6A3;
+    cursor: pointer;
+}
+
+.notClickableDate{
+    background-color: rgba(128, 128, 128, 0.315);
+}
+
+.selectedDate{
+    background-color: #FF5E5E;
+}
+
+/*^^^^^^^^^^^日歷^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+/*vvvvvvvvvvvvvvvv行程規劃資訊vvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+#agenda-view{
+    width: 50%;
+    height: 50%;
+}
+.agenda{
+    display: grid;
+    grid-template-columns: 100px 900px;
+    grid-template-rows: 100px auto;
+}
+.pointCircle-big{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #FF5E5E;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    font-size: 24pt;
+    color: aliceblue;
+}
+.pointCircle-small{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #E2955A;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    font-size: 14pt;
+    color: aliceblue;
+}
+
+.agenda-content{
+    display: grid;
+    grid-template-columns: 70px 95%;
+    grid-template-rows: 70px auto;
+    margin: 15px;
+}
+.agenda-itme{
+    margin: auto 0;
+    font-size: 26px;
+    color: #616161;
+}
+
+.subText{
+    margin: auto 0;
+    font-size: 14px;
+    color: #616161a8;
+    text-indent: 1.5em;
+}
+
+/*^^^^^^^^^^^行程規劃資訊^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+
+
+
+/*vvvvvvvvvvvvvvvv估價vvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+.price-grid{
+    width: 70%;
+    min-width: 1000px;
+    display: grid;
+    grid-template-rows: auto 150px;
+}
+.price-table{
+    width: 100%;
+    min-width: 1000px;
+    word-wrap: break-word;
+    table-layout: auto;
+}
+.price-table th{
+    border: solid 2px #FF5E5E;
+    max-width: 50px;
+    line-height: 35px;
+    color:  rgba(58, 58, 58, 0.897);
+}
+
+.cell-l{
+    width: 100px;
+    text-align: center;
+}
+.price-table tbody{
+    color: #EC4FB690;
+    font-size: 14pt;
+    line-height: 35pt;
+}
+.price-table td{
+    border: solid 1px rgba(163, 163, 163, 0.658);
+}
+
+.price-total{
+    display: grid;
+    height: 50px;
+    grid-template-columns:600px 200px auto;
+}
+#total{
+    justify-self: end;
+    font-size: 18pt;
+    color: #616161;
+    line-height: 2em;
+    
+}
+#total-number{
+    text-align: right;
+    color: #EC4FB690;
+    width: 100%;
+    font-size: 18pt;
+    line-height: 2em;
+    border-bottom: solid 2px #61616170;
+}
+
+
+/*^^^^^^^^^^^估價^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+#otherState{
+    width: 70%;
+    line-break: auto;
+}
+
+
+/*vvvvvvvvvvvvvvvv評價vvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+.commentContainer{
+    width: 90%;
+    min-height: 150px;
+}
+.comment ,.commentReply{
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 30px 50px auto;
+    margin: 15px 0;
+}
+.comment .user-headShot,.commentReply .user-headShot{
+    height: 70px;
+    width: 70px;
+    grid-row: 1/4;
+}
+.commentReply{
+    background-color: #FFF6A380;
+    border-radius: 15px;
+    margin-left: 100px;
+
+}
+
+.commentContainer hr{
+    width: 95%;
+    border: 1px solid #61616170;
+}
+
+/*^^^^^^^^^^^評價^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+/*vvvvvvvvvvvvvvvv推薦vvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+.recommend{
+    background-color: #616161;
+    width: 100%;
+    min-height: 450px;
+    padding-top: 15px;
+}
+/*^^^^^^^^^^^推薦^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*多圖片上傳*展示區*/
+.gallery{
+    width: 800px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.gallery img{
+   padding: 0 10px;
+}
+
+.gallery-photobox{
+    display: grid;
+}
+.gallery-photobox:hover{
+   
+    z-index: 10;
+}
+.gallery-photobox img{
+    grid-area: 1/1;
+}
+/*刪除圖片叉叉*/
+.gallery-photobox span{
+    background-color: rgba(196, 196, 196, 0.637);
+    padding: 10px;
+    border-radius: 50%;
+    grid-area: 1/1;
+    max-width: 15px;
+    max-height: 15px;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 2;
+    margin: 1%;
+    color: aliceblue;
+    cursor: pointer;
+}
+.gallery-photobox span:hover{
+    background-color: #FF5E5E;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1600px) {
+    .price-grid{
+        min-width: 450px;
+    }
+    .price-table{
+        width: 90%;
+        min-width: 800px;
+        
+    }
+    .price-total{
+        grid-template-columns:300px 200px auto;
+    }
+ }

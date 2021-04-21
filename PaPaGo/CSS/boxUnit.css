@@ -1,0 +1,46 @@
+/*新的產品展示?*/
+.boxUnitContainer{
+    height: 95%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    margin: 10px;
+}
+.boxUnit{
+    height: 300px;
+    width: 250px;
+    background-color: white;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: auto 15% 15px 50px 5px 30px;
+    cursor: pointer;
+    padding: 5px;
+    
+    transition: 0.5s;
+}
+.boxUnit:hover{
+    /*height: calc(100% + 150px);*/
+    grid-template-rows: 40% 15% 15px 50px auto 30px;
+    height: 450px;
+}
+.boxUnit .boxTitle{
+    font-size: 12pt;
+    font-size: 2vh;
+    margin: 5px 10px;
+}
+.boxUnit img{
+    max-width: 95%;
+    max-height: 100%;
+}
+.boxUnit .thumb{
+    max-height: 150px;
+    margin: 0 auto;
+}
+.boxUnit .info{
+    margin: 5px;
+    text-indent: 1.2em;
+    overflow: hidden;
+    color: gray;
+    transition: 0.5s;
+}
+

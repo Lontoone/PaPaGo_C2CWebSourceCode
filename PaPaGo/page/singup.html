@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>註冊</title>
+    <link rel="shortcut icon" href="../img/icon/logo1.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap&subset=chinese-traditional"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
+
+    <script src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
+    
+    <link rel='stylesheet' href='../css/reset.css'>
+    <link rel='stylesheet' href='../css/common.css'>
+    <link rel='stylesheet' href='../css/main.css'>
+    <link rel='stylesheet' href='../css/log-sing-in.css'>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo putCenter"><a href="../">PAPAGO</a></div>
+
+            <!--"登入|註冊"按鈕-->
+            <div class="putCenter">
+
+            </div>
+        </div>
+
+        <form action="../PHP/singup.php" method="POST" class="fillinBlock putCenter" id="signup_from">
+            <div class="fillinItems putCenter">
+                <p>信箱</p>
+                <input type="text" name="mail_input" id="mail_input" class="fillinBar">
+
+                <p>密碼</p>
+                <input type="password" name="passwd_input" id="passwd_input" class="fillinBar">
+
+                <p>確認密碼</p>
+                <input type="password" name="" id="passwd_input_2" class="fillinBar">
+
+                <div class="blockFooter putCenter">
+                    <a href="../page/login.html" class="putCenter">會員登入</a>
+                    <div class="checkAgreement">
+                        <input type="checkbox" name="" id="" checked>
+                        我同意 <a href="#">使用者說名書</a>
+                    </div>
+                    <input type="submit" value="註冊" class="roundBtn">
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+    <script src='../js/inputCheck.js'></script>
+</body>
+
+</html>

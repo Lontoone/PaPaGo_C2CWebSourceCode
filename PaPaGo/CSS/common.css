@@ -1,0 +1,141 @@
+/*通用型*/
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.putCenter{
+    margin: auto;
+    justify-content: center;
+    align-self: center;
+}
+
+.unable, .hidden{
+    display: none !important;
+}
+.transparent{
+    color: #00000000 !important;
+    background-color: #00000000 !important;
+}
+
+/*btn顏色*/
+.btn1{
+    color: aliceblue;
+    background-color: #FF9A7A;
+}
+.btn2{
+    color: aliceblue;
+    background-color: #E25A5A;
+}
+.btn3{
+    color: aliceblue;
+    background-color: #FFF6A3;
+}
+.btn-c{
+    color: aliceblue;
+    transition: 0.5s;
+    background-color: rgba(104, 104, 104, 0.616);
+}
+.btn-c:hover{
+    transition: 0.5s;
+    background-color: rgb(131, 29, 29);
+}
+
+
+
+.text-indent{
+    text-indent: 1.2em;
+}
+
+/*按鈕-圓形-小*/
+.btn-r-s{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 25%;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+}
+
+.shadow-m{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*單純輸入*/
+.input-none{
+    min-height: 20px;
+    max-height: 95%;
+    width: 95%;
+    border: none;
+    text-decoration: none;
+    resize: none;
+    overflow: hidden;
+}
+
+
+/**/
+.max-200px{
+    max-height: 200px;
+}
+.max-70px{
+    max-height: 70px;
+}
+.max-20px{
+    max-height: 20px;
+}
+
+/*漸層*/
+.gradient *:nth-child(1){
+    background-color: rgb(255, 166, 106);
+}
+.gradient *:nth-child(2){
+    background-color: rgb(255, 186, 106);
+}
+.gradient *:nth-child(3){
+    background-color: rgb(240, 148, 95);
+}
+.gradient *:nth-child(4){
+    background-color: rgb(255, 166, 106);
+}
+.gradient *:nth-child(5){
+    background-color: rgb(192, 143, 97);
+}
+.gradient *:nth-child(6){
+
+    background-color:  rgb(255, 130, 80);;
+}
+.gradient *:nth-child(7){
+    background-color: rgb(255, 162, 147);;
+}
+
+
+/*排版*/
+.col2-100-auto{
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+.col2-70-auto{
+    display: grid;
+    grid-template-columns: 70px auto;
+}
+.col2-auto-auto{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.col2-30-50{
+    display: grid;
+    grid-template-columns: 30px 50px;
+}
+
+/*[特殊:]*/
+
+/*評價星星:*/
+.star-container img{
+    width: 20px ;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1600px) {
+  
+}

@@ -1,0 +1,270 @@
+html{
+    scroll-behavior: smooth;
+}
+html a{text-decoration: none;}
+input{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+body{
+    background-color: #F3F3F3;
+}
+.header{
+    background: rgb(2,0,36);
+    background: linear-gradient(184deg, rgba(2,0,36,1) 0%, rgba(236,106,80,1) 0%, rgba(255,154,122,1) 100%);
+    width: 100%;
+    height: 70px;
+    position:fixed ;
+    display: grid;
+	z-index:100;
+    grid-template-columns: auto 800px 200px 100px ;    
+}
+
+.footer{
+    background-color: gray;
+    color: rgba(240, 248, 255, 0.5);
+    height: 300px;
+    width: 100%;
+}
+.footer-info{
+    height: 20%;
+    width: 50%;
+    padding-top: 150px;
+    text-align: center;
+}
+.footer-info *{
+    line-height: 1.5em;
+}
+
+.logo{
+    font-size: 37pt;
+    color: aliceblue;
+}
+.logo a{ text-decoration: none; color: inherit;}
+
+.searchBar{
+    max-width: 100%;
+    height: 45px;
+    background-color: aliceblue;
+    border-radius: 50px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-indent: 25pt;
+    color: rgb(68, 68, 68);
+    font-size: 18pt;
+}
+
+.roundBtn{
+    width: 74px;
+    height: 40px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background-color: #FF5E5E;
+    color: aliceblue;
+    font-size: 12pt;
+    margin-left: 50px;
+    transition: 0.5s;
+}
+.roundBtn:hover{
+    background-color: rgb(226, 109, 109);
+    -webkit-transform:scale(1.25,1.25);
+    cursor: pointer;
+}
+.searcherbar-hidebtn{
+    margin: auto 0;
+    text-align: center;
+    line-height: 2.5em;
+}
+
+.sign-log-in a{
+    margin: 15px;
+    font-size: 15pt;
+    text-decoration: none;
+    color: aliceblue;
+    /*-webkit-text-stroke-width:0.5px;*/
+    font-weight:bold;
+}
+
+.user-headShot ,.chatroom-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.headLine{
+    position: relative;
+    padding-top: 80px;
+    display: block;
+    width: 100%;
+    height: 350px;
+    z-index: -5;
+}
+.headLineContent{
+    width: min-content;
+    height: 350px;
+    background-color: #FF5E5E;
+}
+
+.mainSection{
+    background-color: white;
+    width: 1200px;
+    min-height: 500px;
+
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.changePage-btn{
+    height: 100px;
+    width: 20%;
+    justify-content:space-evenly;
+}
+.changePage-btn *{
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 15px;
+}
+/***********************排序選單**************************/
+.selectionBar{
+    height: 45px;
+    color: white;
+    background-color: #FF5E5E;
+    display: flex;
+    align-items: center;
+    
+    overflow: hidden;
+    /*border-radius:0 0 15px;*/
+}
+.selectionBar li{
+    cursor: pointer;
+    /*margin-left: 50px;*/
+    width: 100px;
+    height: 100%;
+    transition: 0.5s;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 25px;
+    font-size: 16pt;
+    /*box-shadow: 1px 0px 0px 1.5px rgba(253, 255, 126, 0.342);*/
+    /*BUG:字不能垂直置中*/
+}
+
+.selectionBar li:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+/*^^^^^^^^^^^^^^^^^^^^^排序選單^^^^^^^^^^^^^^^^^^^^^*/
+
+
+/*vvvvvvvvvvvvvvvvvvvvv產品單位vvvvvvvvvvvvvvvvvvvvv*/
+.productPreviewUnit{
+    display: grid;
+    grid-template-columns: 250px auto;
+    margin: 15px 30px;
+    background-color:white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 1s;
+    text-decoration: none;
+}
+.productPreviewUnit:hover{
+    cursor: pointer;
+    -webkit-transform:scale(1.05,1.05);
+}
+.productPreviewUnit img{
+    height: 220px;
+    width: 220px;
+}
+/*標題*/
+.productTitle{
+    color: rgb(59, 59, 59);
+    height: 45px;
+    margin: 15px;
+    font-size: 26pt;
+}
+.productPreviewInfo{
+    display: grid;
+    height: 100px;
+    grid-template-columns: 200px auto;
+}
+.ratingInfo ,.title-ratingInfo{
+    height: 90%;
+    width: 70%;
+    font-size: 8pt;
+    color: rgba(59, 59, 59, 0.514);
+}
+.ratingInfo img, .rv img,.title-ratingInfo img{
+    width: 100px;
+    height: 20px;
+    margin: 0 15px;
+}
+.ratingInfo p{
+    margin: 5px;
+    text-indent: 1em;
+}
+
+.dercribe{
+    width: 95%;
+    overflow: hidden;
+    color: rgb(78, 78, 78);
+    line-height: 1.25em;
+
+}
+
+.productPreviewFooter{
+    height: 50px;
+    width: 95%;
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+}
+.price{
+    font-size: 26pt;
+    color: #3B841C;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.saveInfo{
+    justify-content: center;
+    align-self: center;
+}
+.saveInfo img{
+    cursor: pointer;
+    width: 20px;
+    height: 15px;
+    margin: 0 5px;
+}
+.sellerInfo{
+    font-size: 10pt;
+    color: rgb(42, 42, 42);
+    color: rgba(59, 59, 59, 0.514);
+}
+.sellerInfo img{
+    width: 50px;
+    height: 10px;
+    margin: 5px 0px;
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^產品單位^^^^^^^^^^^^^^^^^^^^^*/
+
+/*
+@media screen and (min-width:900px){
+    .searcherbar-hidebtn{ display: none;}}
+
+@media screen and (max-width:900px){
+    .searchBar{ width: 300px;}
+    .searchbar-wrapper{display: none;}
+    }
+    
+    */
+@media screen and (max-width:700px){
+    .searchBar{ display: none;}
+    #searchbar-btn{ display: none;}
+    .user-headShot{display: none;}
+    .header{grid-template-columns: auto auto 150px ;}
+    }
+
+.searchBar::placeholder{
+    color: rgba(68, 68, 68, 0.226);
+}

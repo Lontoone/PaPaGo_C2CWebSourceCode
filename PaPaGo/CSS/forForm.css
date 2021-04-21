@@ -1,0 +1,111 @@
+/*vvvvvvvvvvvvvvvvvvvvv色彩表格vvvvvvvvvvvvvvvvvvvvv*/
+
+.infoTable{
+    width: 90%;
+    min-height: 50px;
+    border: 2px solid  #D28E83;
+}
+.infoTable thead{
+    background-color: #D28E83;
+    line-height: 2em;
+    color: aliceblue;
+}
+.infoTable th{
+    border: 1px solid gray;
+}
+.infoTable td{   
+    /*border: 1px solid rgba(128, 128, 128, 0.226);*/
+    text-align: center;
+    vertical-align: middle;
+    color: #F17DC9;
+}
+.infoTable tr:nth-child(even){
+    background-color: rgba(250, 180, 170, 0.19);
+}
+.infoTable tr{
+    max-height: 150px;
+}
+.infoTable a{
+    color: #F17DC9;
+}
+.infoTable .actionGroup a{
+    color: gray;
+    text-decoration:  none;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+
+.title-big ,.title-small{
+    cursor: pointer;
+    margin: 15px 0;
+    font-size: 18pt;
+    color: rgba(37, 37, 37, 0.918);
+}
+.title-small{
+    text-indent: 2em;
+    font-size: 12pt;
+}
+
+.fillinBar ,.fillinBar-s{
+    text-decoration: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgba(141, 141, 141, 0.233);
+    width: 250px;
+    height: 30px;
+    text-indent: 1em;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+/*under-line*/
+.fillinBar-ul{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid rgba(141, 141, 141, 0.432);
+    width: 50%;
+    height: 30px;
+    text-indent: 1em;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+/*short*/
+.fillinBar-s{
+    width: 70px;
+}
+
+
+.textarea-b{
+    width: 90%;
+    height: 70%;
+    resize: none;
+    font-size: 12pt;
+}
+
+
+/*上傳區-矩形-虛線-大*/
+.upload-s-dotted-b{
+    max-width: 90%;
+    max-height: 85%;
+    border: 5px dotted #E25A5A;
+    border-radius: 25px;
+    
+}
+/*^^^^^^^^^^^^^^^^^^^^^色彩表格^^^^^^^^^^^^^^^^^^^^^*/
+
+
+
+
+
+
+@media screen and (max-width: 1600px) {
+    .textarea-b{
+        width: 70%;
+    }
+    .input-none{
+        width: 70%;
+    }
+ }
